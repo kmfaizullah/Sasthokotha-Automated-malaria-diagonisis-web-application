@@ -10,3 +10,6 @@ This repository contains deployment of a deep learning based model, capable of d
 6. OpenCv 2.4.11
 7. Tensorflow 1.13.2
 8. Keras 2.3.1
+
+# Procedures
+Clone or download this repository. Install all the requirements. Run "app.py" file using comman "python app.py". Then go to the link " http://127.0.0.1:5000/"
