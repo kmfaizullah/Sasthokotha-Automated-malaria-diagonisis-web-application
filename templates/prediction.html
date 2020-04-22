@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<title>Upload File</title>
+
+
+<!-- {% if file_url %}
+<br>
+<img src="{{ file_url }}">
+{% endif %} -->
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <meta charset='utf-8'>
+    
+    <title>Automatic Birds Identification</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <title>Malaria Parasite Detection</title>
+
+    <style>
+        body {
+          font-family: Verdana, sans-serif;
+          margin: 0;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        .row > .column {
+          padding: 0 8px;
+        }
+        
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        .column {
+          float: left;
+          width: 20%;
+        }
+        
+        /* The Modal (background) */
+        .modal {
+          display: none;
+          position: fixed;
+          z-index: 1;
+          padding-top: 100px;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: black;
+        }
+        
+        /* Modal Content */
+        .modal-content {
+          position: relative;
+          background-color: #fefefe;
+          margin: auto;
+          padding: 0;
+          width: 90%;
+          max-width: 1200px;
+        }
+        
+        /* The Close Button */
+        .close {
+          color: white;
+          position: absolute;
+          top: 10px;
+          right: 25px;
+          font-size: 35px;
+          font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: #999;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        
+        .mySlides {
+          display: none;
+        }
+        
+        .cursor {
+          cursor: pointer;
+        }
+        
+        /* Next & previous buttons */
+        .prev,
+        .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -50px;
+          color: white;
+          font-weight: bold;
+          font-size: 20px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+          -webkit-user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        img {
+          margin-bottom: -4px;
+        }
+        
+        .caption-container {
+          text-align: center;
+          background-color: black;
+          padding: 2px 16px;
+          color: white;
+        }
+        
+        .demo {
+          opacity: 0.6;
+        }
+        
+        .active,
+        .demo:hover {
+          opacity: 1;
+        }
+        
+        img.hover-shadow {
+          transition: 0.3s;
+        }
+        
+        .hover-shadow:hover {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        </style>
+
+
+
+
+
+  </head>
+  <body>
+
+    <!-- Nav bar  -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">Menu</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                      <a class="nav-link" href="{{ url_for('predict') }}">Prediction</a>
+              </li>
+
+         <li class="nav-item">
+                  <a class="nav-link" href="{{ url_for('samples') }}">Samples</a>
+                </li>
+
+              
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('team') }}">Team Members</a>
+              </li>
+             
+  
+            </ul>
+          
+          </div>
+        </nav> 
+   
+
+
+
+ <!-- Heading and image -->
+
+        <div class="container">
+            <section style="margin-top: 40px;">
+               <h1 style="color:#328F4F ;"> <center> Malaria Parasite Diagnosis from a Microscopic Blood Smear. </center></h1>
+            </section>
+
+          <div class="row">
+              <div class="column">
+                <img src="{{ img_files.img1 }}" style="width:150px; height: 150px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+              </div>
+              <div class="column">
+                <img src="{{ img_files.img2 }}" style="width:150px; height: 150px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+              </div>
+              <div class="column">
+                <img src="{{ img_files.img3 }}" style="width:150px; height: 150px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+              </div>
+              <div class="column">
+                <img src="{{ img_files.img4 }}" style="width:150px; height: 150px" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+              </div>
+               <div class="column">
+                <img src="{{ img_files.img5 }}" style="width:150px; height: 150px" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+              </div>
+
+            </div>
+      </div>
+     
+
+ <!-- Upload file and prediction -->
+     <div class="container"> 
+        <div class="p-1 mb-1 text-white" style="background: #328F4F; margin-top: 50px"> <br> <center><h1> Malaria Parasite Diagnosis </h1></center> <br> </div>
+        
+
+        <center> <h1> Upload an image </h1>
+        <form method="POST" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+            {{ form.photo }}
+            {% for error in form.photo.errors %}
+                <span style="color: red;">{{ error }}</span>
+            {% endfor %}
+            {{ form.submit }}
+        </form>
+
+        <div>
+            {% if predict_result %}
+            <br>
+            <div class="row" style="margin-top: 70px;">
+                <div class="col">
+                  <section style="margin-top: 30px;">
+                    <h2 style="color:rgb(7, 7, 7) ;"> Prediction: {{ predict_result }} </h1>
+                 </section>
+                </div>
+                <div class="col">
+                    <img src="{{ pred_image }}" width="100" height="100"> 
+                </div>
+            </div>
+           
+            <!-- <h1>Prediction: {{ predict_result }}</h1> -->
+            {% endif %}
+        </div>
+      </div>
+      </center>
+    
+   
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- For calling api and parsing data -->
+
+      
+      
+              
+    </script>
+  </body>
+</html>
