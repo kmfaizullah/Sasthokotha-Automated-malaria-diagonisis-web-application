@@ -1,7 +1,6 @@
 # Sasthokotha : An Automated Malaria Diagnosis web Application
 This repository contains deployment of a deep learning based model, capable of detecting malaria infected and uninfected malaria parasite from blood smear using Flask. The model is both highly accurate and efficient. The required floating point operations for this model is nearly 4600 only and with an accuracy of 99.23% it can classify a malarial parasite. 
 
-### <a href = "https://youtu.be/a8OUpQQI3HY">Project Demonstration</a>
 
 # Depencencies
 1. Python 2.7.15
